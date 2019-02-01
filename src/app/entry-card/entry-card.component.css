@@ -1,0 +1,28 @@
+[class^="medical-icon-"], [class*=" medical-icon-"] {
+  font-size: 2em !important;
+}
+/* [class^="medical-icon-"]:hover, [class*=" medical-icon-"]:hover {
+  font-size: 4em !important;
+} */
+mat-card {
+  font-size: 2em !important;
+  margin-top: 10px;
+  background-color: #e0e0e0;
+}
+mat-card:hover {
+  /* font-size: 4em !important; */
+  background-color: #d0d0e0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-footer-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+
+  font-size: 14px;
+}
+
+.card-footer-panel span {
+  font-weight: 500;
+}

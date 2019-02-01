@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-header>     
+    <mat-card-title>
+        <span class="{{icon}}" (mouseover)="openDialog()" aria-hidden="true"></span>
+        {{title}}
+    </mat-card-title>   
+  </mat-card-header>
+
+  <mat-card-content>
+    <strong>AVERAGE SPEND</strong><br />
+    <span style="font-size:2em;">
+      {{data.ytd_spend / 52 | currency}}
+    </span>
+  </mat-card-content>
+  <mat-divider></mat-divider>
+
+  <mat-card-footer>
+    <section class="card-footer-panel">
+      <div class="footer-data"><span>QUANTITY</span><br />???</div>
+      <div class="footer-data">
+        <span>SAVINGS</span><br />{{ data.prev_wks_savings | currency }}
+      </div>
+      <div class="footer-data">
+        <span>SAVINGS PERCENT</span><br />{{
+          data.prev_wks_avg_save / data.prev_wks_spend | percent
+        }}
+      </div>
+    </section>
+  </mat-card-footer>
+</mat-card>

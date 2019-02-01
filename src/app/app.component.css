@@ -1,0 +1,39 @@
+
+.grid-container {    
+  text-align:right;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+background-color: rgb(234, 244, 247);
+  grid-template-areas: 'lhm Content';
+}
+
+.lhm {
+  grid-area: lhm;
+}
+
+.lhm h3 {
+  text-align: center;
+}
+
+.Content {
+  text-align: center;
+  display: grid;
+  grid-area: Content;
+  /* border: 1px black solid;  */
+
+}
+
+.nav {
+  /* border: 1px black solid;  */
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  list-style: none;
+}
+
+/* .nav li {
+  background-color: paleblue;
+  padding-right: 10;
+  margin-top:50px;
+} */
+

@@ -1,0 +1,13 @@
+
+<!-- https://stackoverflow.com/questions/37686772/angular-2-hover-event -->
+<div *ngIf="(summary$ | async) as summary" class="grid-container">
+  <div class="card-row">      
+    <app-entry-card title='Labor' [data]='summary'></app-entry-card>
+    <app-entry-card title='LOS' [data]='summary' ></app-entry-card>
+    <app-entry-card title='Worklists' [data]='summary'></app-entry-card>
+    <app-entry-card title='PatientPlacement' [data]='summary'></app-entry-card>
+    <app-entry-card title='Supplies' [data]='summary'></app-entry-card>
+    <app-entry-card title='Staffing' [data]='summary'></app-entry-card>
+  </div>
+  
+</div>

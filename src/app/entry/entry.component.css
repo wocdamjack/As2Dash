@@ -1,0 +1,31 @@
+
+@media (min-width: 700px) {
+  .grid-container {
+    display: flex;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 8fr;
+    grid-template-areas: "card-row" ".";
+  }
+  .card-row {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    grid-area: card-row;
+  } 
+}
+
+.centered {
+  text-align: center;
+}
+
+kendo-tabstrip p {
+  width:100%;
+    margin: 0;
+    padding: 8px;
+}
+.horiz-nav ul li {
+  display: inline;
+  list-style: none;
+}
